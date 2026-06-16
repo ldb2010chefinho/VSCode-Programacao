@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>História em 1 Minuto</title>
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>História em 1 Minuto</h1>
+</header>
+
+<section>
+    <h2>Linha do Tempo</h2>
+
+    <button onclick="mostrar('antiga')">Idade Antiga</button>
+    <button onclick="mostrar('media')">Idade Média</button>
+    <button onclick="mostrar('moderna')">Idade Moderna</button>
+    <button onclick="mostrar('contemporanea')">Idade Contemporânea</button>
+</section>
+
+<article id="conteudo">
+    <p>Clique em um período para estudar.</p>
+</article>
+
+<script>
+function mostrar(periodo) {
+    let conteudo = document.getElementById("conteudo");
+
+    if (periodo === "antiga") {
+        conteudo.innerHTML = `
+        <h2>Idade Antiga</h2>
+        <p><b>O que é:</b> Período das primeiras civilizações.</p>
+        <p><b>Exemplo:</b> Egito Antigo.</p>
+        <p><b>Causa:</b> Surgimento da agricultura.</p>
+        <p><b>Consequência:</b> Criação das primeiras cidades.</p>
+        `;
+    }
+
+    if (periodo === "media") {
+        conteudo.innerHTML = `
+        <h2>Idade Média</h2>
+        <p><b>O que é:</b> Período do feudalismo.</p>
+        <p><b>Causa:</b> Queda do Império Romano.</p>
+        <p><b>Consequência:</b> Sociedade rural.</p>
+        `;
+    }
+
+    if (periodo === "moderna") {
+        conteudo.innerHTML = `
+        <h2>Idade Moderna</h2>
+        <p><b>O que é:</b> Período das grandes navegações.</p>
+        <p><b>Causa:</b> Busca por riquezas.</p>
+        <p><b>Consequência:</b> Colonização.</p>
+        `;
+    }
+
+    if (periodo === "contemporanea") {
+        conteudo.innerHTML = `
+        <h2>Idade Contemporânea</h2>
+        <p><b>O que é:</b> Período das guerras mundiais.</p>
+        <p><b>Causa:</b> Conflitos entre países.</p>
+        <p><b>Consequência:</b> Mudanças globais.</p>
+        `;
+    }
+}
+</script>
+
+</body>
+</html>

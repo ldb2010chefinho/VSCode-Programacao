@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+  flex-wrap: nowrap;
+  height: 200px;
+  
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  width:100px
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-grow Property</h1>
+
+<p>Make the third flex item grow eight times faster than the other flex items:</p>
+
+<div class="flex-container">
+  <div style="flex-shrink: 0;
+  flex-grow: 6;
+  align-self: flex-end;">1</div>
+  <div style="flex-shrink: 2;
+  align-self:center">2</div>
+  <div style="flex-shrink: 3">3</div>
+  <div style="flex-basis: 200px;
+  align-self:flex-start">4</div>
+  <div >5</div>
+  <div >6</div>
+</div>
+
+</body>
+</html>

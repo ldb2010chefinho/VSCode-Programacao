@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe e Objeto</title>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script>
+        class Bola {
+            constructor(x,y,velocidadeX,velocidadeY,raio) {
+                this.x = x;
+                this.y = y;
+                this.velocidadeX = velocidadeX;
+                this.velocidadeY = velocidadeY;
+                this.raio = raio;
+            }
+            display(){
+                circle(this.x,this.y,this.raio)
+            }
+            move(){
+                this.x += this.velocidadeX;
+                this.y += this.velocidadeY;
+
+                if (this.x <=  0 ||this.x >= width) {
+                    this.velocidadeX *= -1;
+                }
+                if (this.y <=  0 ||this.y >= height) {
+                    this.velocidadeY *= -1;
+                }
+            }
+        }
+
+        let bola = [];
+        
+        function setup() {
+            createCanvas(600,500);
+            fill("green");
+             for (let index = 0; index < 10; index++) {
+                let bola1 =new Bola(index*50,index*50,1,1,index*10)
+                bola.push(bola1)
+            }
+        }
+
+        function draw() {
+            background(220);
+            for (let index = 0; index < 10; index++) {
+                bola[index].display()   
+                bola[index].move()
+             
+            }
+        }
+
+        
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</h

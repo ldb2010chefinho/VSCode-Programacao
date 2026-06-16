@@ -1,0 +1,20 @@
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+#trigonometria{
+    background-color: rgba(0, 0, 255, 0.347);
+    justify-content: center;
+    align-items: center;
+    border: 5px solid darkblue;
+    width: 500px;
+    height: 700px;
+}
+
+.saida{
+    background-color: azure;
+    border: 2px solid azure;
+    width: 85px;
+    height: 20px;
+}
