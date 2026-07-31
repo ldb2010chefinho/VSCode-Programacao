@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/*====================
+        NAVBAR
+====================*/
+
+.nav{
+    width: 70%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #D70000;
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 15px 1px #AA1523;
+    z-index: 1000;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a{
+    color:black;
+    text-decoration: none;
+    transition: .3s;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover{
+    color:#FBC513;
+    text-decoration: underline;
+    font-size: 18px;
+    position: relative;
+    bottom:  5px;
+}
+
+
+/*====================
+        HOME
+====================*/
+
+.div_inicio{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap: 50px;
+
+    padding:0 8%;
+
+    background-color:#0D2673;
+}
+
+.div_inicio img{
+    width:100%;
+    max-width:700px;
+    height:auto;
+}
+
+
+/*====================
+        TRAILER
+====================*/
+
+.div_trailer{
+    background-color:black;
+    color:#FBC513;
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:50px;
+
+    padding:0 8%;
+}
+
+iframe{
+    border-radius:20px;
+    box-shadow: 5px 5px 15px 1px #fbc513;
+
+}
+
+
+/*====================
+        SINOPSE
+====================*/
+
+.div_sinopse{
+    background-color:#AA1523;
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:50px;
+
+    padding:0 8%;
+}
+
+.texto{
+    max-width:650px;
+}
+
+.texto h2{
+    color: #FBC513;
+    margin-bottom:20px;
+    font-size: 30px;
+}
+
+.texto p{
+    line-height:1.8;
+    font-size: 20px;
+    color: white;
+}
+
+.texto hr{
+    width: 20%;
+    border: 1px solid #FBC513;
+}
+
+.div_sinopse img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+}
+
+
+/*====================
+      TRANSIÇÕES
+====================*/
+
+.spider,
+.peter{
+    width:100%;
+    height:50vh;
+
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+
+/* Homem-Aranha */
+
+.spider{
+    background-image:url(src/spider_eyes.png);
+}
+
+
+/* Peter Parker */
+
+.peter{
+    background-image:url(src/peter_eyes.png);
+}
+
+
+/*====================
+    PERSONAGENS
+====================*/
+
+.div_personagens{
+    width:100%;
+    min-height:100vh;
+
+    padding:80px 8%;
+
+    background-color:#0D2673;
+    color:white;
+}
+
+.div_personagens h2{
+    font-size: 30px;
+
+}
+
+.cards{
+    background-color: #AA1523;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-top: 50px;
+    padding: 30px;
+
+}
+
+
+.cards .texto{
+    max-width: 500px;
+}
+
+
+.cards h2{
+    color:#FBC513;
+    margin-bottom:20px;
+    
+}
+
+
+.cards p{
+    color:white;
+    line-height:1.8;
+    font-size: 20px;
+}
+
+
+.cards img{
+    width:100%;
+    max-width:400px;
+    height:auto;
+    border-radius: 20px;
+}
